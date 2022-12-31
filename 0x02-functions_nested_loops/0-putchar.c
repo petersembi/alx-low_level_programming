@@ -5,6 +5,8 @@
 #include <time.h>
 
 #include <unistd.h>
+
+
 /* more headers goes there */
 
 /**
@@ -15,10 +17,15 @@
 * On error, -1 is returned, and errno is set appropriately. 
 */
 
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 /**
 *main - Entry point
 *Return: zero(success)
 */
+
 
 
 int main(void)
